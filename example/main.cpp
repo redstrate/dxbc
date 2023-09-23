@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include <dxbc/dxbc_module.h>
-#include <util/log/log.h>
+#include <dxbc_module.h>
+#include <log/log.h>
 
 #include <spirv_cross/spirv_glsl.hpp>
 
