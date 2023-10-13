@@ -33,3 +33,4 @@ target_sources(dxbc PRIVATE
 )
 target_include_directories(dxbc PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(dxbc PUBLIC dxbc-util dxbc-spirv Vulkan::Vulkan)
+target_compile_options(dxbc PRIVATE -fexceptions)

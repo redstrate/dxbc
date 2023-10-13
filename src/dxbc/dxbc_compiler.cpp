@@ -1466,6 +1466,8 @@ namespace dxvk {
     m_bindings.push_back(binding);
 
     return varId;*/
+
+    return 0;
   }
   
   

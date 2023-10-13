@@ -11,7 +11,7 @@ namespace dxvk {
       case DxbcProgramType::DomainShader   : return VK_SHADER_STAGE_TESSELLATION_EVALUATION_BIT;
       case DxbcProgramType::ComputeShader  : return VK_SHADER_STAGE_COMPUTE_BIT;
     }
-    
+
     throw DxvkError("DxbcProgramInfo::shaderStage: Unsupported program type");
   }
   
@@ -25,7 +25,7 @@ namespace dxvk {
       case DxbcProgramType::DomainShader   : return spv::ExecutionModelTessellationEvaluation;
       case DxbcProgramType::ComputeShader  : return spv::ExecutionModelGLCompute;
     }
-    
+
     throw DxvkError("DxbcProgramInfo::executionModel: Unsupported program type");
   }
   
