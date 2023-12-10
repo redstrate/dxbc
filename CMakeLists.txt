@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.20)
+
 project(dxbc LANGUAGES CXX)
 
 option(BUILD_EXAMPLE "Build example application" ON)
