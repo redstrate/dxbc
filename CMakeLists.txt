@@ -5,6 +5,7 @@ project(dxbc LANGUAGES CXX)
 option(BUILD_EXAMPLE "Build example application" ON)
 
 find_package(Vulkan REQUIRED)
+find_package(SPIRV-Headers REQUIRED)
 
 add_subdirectory(include/windows)
 add_subdirectory(src/util)
