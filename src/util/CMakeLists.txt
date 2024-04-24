@@ -30,5 +30,7 @@ target_sources(dxbc-util PRIVATE
         util_string.h
 )
 target_include_directories(dxbc-util SYSTEM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(dxbc-util PUBLIC windows-headers)
 target_compile_options(dxbc-util PRIVATE -w)
+if (NOT WIN32)
+    target_link_libraries(dxbc-util PUBLIC windows-headers)
+endif()

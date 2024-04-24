@@ -7,7 +7,10 @@ option(BUILD_EXAMPLE "Build example application" ON)
 find_package(Vulkan REQUIRED)
 find_package(SPIRV-Headers REQUIRED)
 
-add_subdirectory(include/windows)
+if (NOT WIN32)
+    add_subdirectory(include/windows)
+endif()
+
 add_subdirectory(src/util)
 add_subdirectory(src/spirv)
 add_subdirectory(src/dxbc)
