@@ -32,5 +32,5 @@ target_sources(dxbc PRIVATE
         dxbc_util.h
 )
 target_include_directories(dxbc SYSTEM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(dxbc PUBLIC dxbc-util dxbc-spirv Vulkan::Vulkan SPIRV-Headers::SPIRV-Headers)
+target_link_libraries(dxbc PUBLIC dxbc-util dxbc-spirv Vulkan::Vulkan)
 target_compile_options(dxbc PRIVATE -fexceptions -w)

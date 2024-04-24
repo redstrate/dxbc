@@ -10,5 +10,5 @@ target_sources(dxbc-spirv PRIVATE
         spirv_module.h
 )
 target_include_directories(dxbc-spirv SYSTEM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(dxbc-spirv PUBLIC windows-headers)
+target_link_libraries(dxbc-spirv PUBLIC windows-headers SPIRV-Headers::SPIRV-Headers)
 target_compile_options(dxbc-spirv PRIVATE -w)
